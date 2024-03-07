@@ -2,25 +2,38 @@
 session_start();
 require("../database.php");
 include("header.php");
+
+$question_count = 0;
+$max_question = 0;
+
+mysqli_query($cn,"select total_que from mst_test where sub_id = '$subid' and test_id = '$testid'", $max_question);
+echo "max number = ".$max_question;
+
 ?>
 <link href="../quiz.css" rel="stylesheet" type="text/css">
 <?php
 extract($_POST);
 
 echo "<BR>";
-if (!isset($_SESSION['alogin']))
+if( array_key_exists('login', $_SESSION) )
 {
-	echo "<br><h2><div  class=head1>You are not Logged On Please Login to Access this Page</div></h2>";
-	echo "<a href=index.php><h3 align=center>Click Here for Login</h3></a>";
-	exit();
+  if (!isset($_SESSION['login']))
+  {
+    echo "<br><h2><div  class=head1>You are not Logged On Please Login to Access this Page</div></h2>";
+    echo "<a href=index.php><h3 align=center>Click Here for Login</h3></a>";
+    exit();
+  }
 }
 echo "<BR><h3 class=head1>Add Question </h3>";
-if($_POST['submit']=='Save' || strlen($_POST['testid'])>0 )
+if( array_key_exists('submit', $_POST) || array_key_exists('testid', $_POST) )
 {
-extract($_POST);
-mysqli_query($cn,"insert into mst_question(test_id,que_desc,ans1,ans2,ans3,ans4,true_ans) values ('$testid','$addque','$ans1','$ans2','$ans3','$ans4','$anstrue')") or die(mysqli_error($cn));
-echo "<p align=center>Question Added Successfully.</p>";
-unset($_POST);
+  if($_POST['submit']=='Save' || strlen($_POST['testid'])>0 )
+  {
+  extract($_POST);
+  mysqli_query($cn,"insert into mst_question(test_id,que_desc,ans1,ans2,ans3,ans4,true_ans) values ('$testid','$addque','$ans1','$ans2','$ans3','$ans4','$anstrue')") or die(mysqli_error($cn));
+  echo "<p align=center>Question Added Successfully.</p>";
+  unset($_POST);
+  }
 }
 ?>
 <SCRIPT LANGUAGE="JavaScript">

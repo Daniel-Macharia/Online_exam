@@ -1,10 +1,15 @@
 <?php
 session_start();
-if (!isset($_SESSION['alogin']))
+
+
+if( array_key_exists('login', $_SESSION))
 {
-	echo "<br><h2>You are not Logged On Please Login to Access this Page</h2>";
-	echo "<a href=index.php><h3 align=center>Click Here for Login</h3></a>";
-	exit();
+  if (!isset($_SESSION['login']))
+  {
+    echo "<br><h2>You are not Logged On Please Login to Access this Page</h2>";
+    echo "<a href=index.php><h3 align=center>Click Here for Login</h3></a>";
+    exit();
+  }
 }
 ?>
 <link href="../quiz.css" rel="stylesheet" type="text/css">
@@ -15,12 +20,15 @@ include("header.php");
 
 
 echo "<br><h2><div  class=head1>Add Test</div></h2>";
-if($_POST['submit']=='Save' || strlen($_POST['subid'])>0 )
+if( array_key_exists('sub_id', $_POST) || array_key_exists('submit', $_POST))
 {
-extract($_POST);
-mysqli_query($cn,"insert into mst_test(sub_id,test_name,total_que) values ('$subid','$testname','$totque')") or die(mysqli_error($cn));
-echo "<p align=center>Test <b>\"$testname\"</b> Added Successfully.</p>";
-unset($_POST);
+  if($_POST['submit']=='Save' || strlen($_POST['subid'])>0 )
+  {
+  extract($_POST);
+  mysqli_query($cn,"insert into mst_test(sub_id,test_name,total_que) values ('$subid','$testname','$totque')") or die(mysqli_error($cn));
+  echo "<p align=center>Test <b>\"$testname\"</b> Added Successfully.</p>";
+  unset($_POST);
+  }
 }
 ?>
 <SCRIPT LANGUAGE="JavaScript">

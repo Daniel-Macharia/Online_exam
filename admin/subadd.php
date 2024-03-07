@@ -2,6 +2,8 @@
 session_start();
 require("../database.php");
 include("header.php");
+global $submit;
+global $subname;
 ?>
 <link href="../quiz.css" rel="stylesheet" type="text/css">
 <?php
@@ -9,7 +11,7 @@ include("header.php");
 extract($_POST);
 
 echo "<BR>";
-if (!isset($_SESSION['alogin']))
+if (!isset($_SESSION['login']))
 {
 	echo "<br><h2><div  class=head1>You are not Logged On Please Login to Access this Page</div></h2>";
 	echo "<a href=index.php><h3 align=center>Click Here for Login</h3></a>";

@@ -1,9 +1,13 @@
 <?php
 session_start();
+
+global $submit;
+
 include("database.php");
 extract($_POST);
 extract($_GET);
 extract($_SESSION);
+
 /*$rs=mysql_query("select * from mst_question where test_id=$tid",$cn) or die(mysql_error());
 if($_SESSION[qn]>mysql_num_rows($rs))
 {
@@ -73,7 +77,8 @@ else
 				$w=$_SESSION['qn']-$_SESSION['trueans'];
 				echo "<tr class=fans><td>Wrong Answer<td> ". $w;
 				echo "</table>";
-				mysqli_query($cn,"insert into mst_result(login,test_id,test_date,score) values('$login',$tid,'".date("d/m/Y")."',$_SESSION[trueans])") or die(mysqli_error($cn));
+				#echo "current date and time is ".date("d/m/Y");
+				mysqli_query($cn,"insert into mst_result(login,test_id,test_date,score) values('$login',$tid,'".date("Y/m/d")."',$_SESSION[trueans])") or die(mysqli_error($cn));
 				echo "<h1 align=center><a href=review.php> Review Question</a> </h1>";
 				unset($_SESSION['qn']);
 				unset($_SESSION['sid']);

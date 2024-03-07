@@ -28,7 +28,7 @@ CREATE TABLE `mst_admin` (
 -- Dumping data for table `mst_admin`
 -- 
 
-INSERT INTO `mst_admin` VALUES ('mca', 'mca');
+INSERT INTO `mst_admin` VALUES ('alice', 'alice');
 
 -- --------------------------------------------------------
 
@@ -179,45 +179,45 @@ CREATE TABLE `mst_result` (
 -- Dumping data for table `mst_result`
 -- 
 
-INSERT INTO `mst_result` VALUES ('raj', 8, '0000-00-00', 3);
-INSERT INTO `mst_result` VALUES ('raj', 9, '0000-00-00', 3);
-INSERT INTO `mst_result` VALUES ('raj', 8, '0000-00-00', 1);
-INSERT INTO `mst_result` VALUES ('ashish', 10, '0000-00-00', 3);
-INSERT INTO `mst_result` VALUES ('ashish', 9, '0000-00-00', 2);
-INSERT INTO `mst_result` VALUES ('ashish', 10, '0000-00-00', 0);
-INSERT INTO `mst_result` VALUES ('raj', 8, '0000-00-00', 0);
-INSERT INTO `mst_result` VALUES ('raj', 9, '0000-00-00', 1);
-INSERT INTO `mst_result` VALUES ('raj', 11, '0000-00-00', 5);
-INSERT INTO `mst_result` VALUES ('raj', 11, '0000-00-00', 6);
-INSERT INTO `mst_result` VALUES ('ashish', 11, '0000-00-00', 12);
-INSERT INTO `mst_result` VALUES ('raj', 12, '0000-00-00', 13);
-INSERT INTO `mst_result` VALUES ('raj', 14, '0000-00-00', 8);
-INSERT INTO `mst_result` VALUES ('raj', 8, '0000-00-00', 1);
-INSERT INTO `mst_result` VALUES ('raj', 12, '0000-00-00', 7);
-INSERT INTO `mst_result` VALUES ('amit', 8, '0000-00-00', 1);
-INSERT INTO `mst_result` VALUES ('amit', 8, '0000-00-00', 1);
-INSERT INTO `mst_result` VALUES ('amit', 8, '0000-00-00', 2);
-INSERT INTO `mst_result` VALUES ('amit', 8, '0000-00-00', 3);
-INSERT INTO `mst_result` VALUES ('amit', 15, '0000-00-00', 0);
-INSERT INTO `mst_result` VALUES ('amit', 15, '0000-00-00', 1);
-INSERT INTO `mst_result` VALUES ('amit', 15, '0000-00-00', 0);
-INSERT INTO `mst_result` VALUES ('amit', 15, '0000-00-00', 1);
-INSERT INTO `mst_result` VALUES ('amit', 15, '0000-00-00', 3);
-INSERT INTO `mst_result` VALUES ('amit', 15, '0000-00-00', 5);
-INSERT INTO `mst_result` VALUES ('amit', 15, '0000-00-00', 5);
-INSERT INTO `mst_result` VALUES ('amit', 15, '0000-00-00', 5);
-INSERT INTO `mst_result` VALUES ('amit', 15, '0000-00-00', 5);
-INSERT INTO `mst_result` VALUES ('amit', 15, '0000-00-00', 11);
-INSERT INTO `mst_result` VALUES ('amit', 15, '0000-00-00', 10);
-INSERT INTO `mst_result` VALUES ('amit', 15, '0000-00-00', 9);
-INSERT INTO `mst_result` VALUES ('amit', 15, '0000-00-00', 8);
-INSERT INTO `mst_result` VALUES ('', 16, '0000-00-00', 0);
-INSERT INTO `mst_result` VALUES ('amit', 16, '0000-00-00', 1);
-INSERT INTO `mst_result` VALUES ('amit', 12, '0000-00-00', 9);
-INSERT INTO `mst_result` VALUES ('', 12, '0000-00-00', 2);
-INSERT INTO `mst_result` VALUES ('amit', 16, '0000-00-00', 1);
-INSERT INTO `mst_result` VALUES ('amit', 8, '0000-00-00', 3);
-INSERT INTO `mst_result` VALUES ('amit', 8, '0000-00-00', 1);
+INSERT INTO `mst_result` VALUES ('alice', 8, '0000-00-00', 3);
+INSERT INTO `mst_result` VALUES ('alice', 9, '0000-00-00', 3);
+INSERT INTO `mst_result` VALUES ('alice', 8, '0000-00-00', 1);
+INSERT INTO `mst_result` VALUES ('mercy', 10, '0000-00-00', 3);
+INSERT INTO `mst_result` VALUES ('mercy', 9, '0000-00-00', 2);
+INSERT INTO `mst_result` VALUES ('mercy', 10, '0000-00-00', 0);
+INSERT INTO `mst_result` VALUES ('alice', 8, '0000-00-00', 0);
+INSERT INTO `mst_result` VALUES ('alice', 9, '0000-00-00', 1);
+INSERT INTO `mst_result` VALUES ('alice', 11, '0000-00-00', 5);
+INSERT INTO `mst_result` VALUES ('alice', 11, '0000-00-00', 6);
+INSERT INTO `mst_result` VALUES ('mercy', 11, '0000-00-00', 12);
+INSERT INTO `mst_result` VALUES ('alice', 12, '0000-00-00', 13);
+INSERT INTO `mst_result` VALUES ('alice', 14, '0000-00-00', 8);
+INSERT INTO `mst_result` VALUES ('alice', 8, '0000-00-00', 1);
+INSERT INTO `mst_result` VALUES ('alice', 12, '0000-00-00', 7);
+INSERT INTO `mst_result` VALUES ('steve', 8, '0000-00-00', 1);
+INSERT INTO `mst_result` VALUES ('steve', 8, '0000-00-00', 1);
+INSERT INTO `mst_result` VALUES ('steve', 8, '0000-00-00', 2);
+INSERT INTO `mst_result` VALUES ('steve', 8, '0000-00-00', 3);
+INSERT INTO `mst_result` VALUES ('steve', 15, '0000-00-00', 0);
+INSERT INTO `mst_result` VALUES ('steve', 15, '0000-00-00', 1);
+INSERT INTO `mst_result` VALUES ('steve', 15, '0000-00-00', 0);
+INSERT INTO `mst_result` VALUES ('steve', 15, '0000-00-00', 1);
+INSERT INTO `mst_result` VALUES ('steve', 15, '0000-00-00', 3);
+INSERT INTO `mst_result` VALUES ('steve', 15, '0000-00-00', 5);
+INSERT INTO `mst_result` VALUES ('steve', 15, '0000-00-00', 5);
+INSERT INTO `mst_result` VALUES ('steve', 15, '0000-00-00', 5);
+INSERT INTO `mst_result` VALUES ('steve', 15, '0000-00-00', 5);
+INSERT INTO `mst_result` VALUES ('steve', 15, '0000-00-00', 11);
+INSERT INTO `mst_result` VALUES ('steve', 15, '0000-00-00', 10);
+INSERT INTO `mst_result` VALUES ('steve', 15, '0000-00-00', 9);
+INSERT INTO `mst_result` VALUES ('steve', 15, '0000-00-00', 8);
+INSERT INTO `mst_result` VALUES ('alice', 16, '0000-00-00', 0);
+INSERT INTO `mst_result` VALUES ('steve', 16, '0000-00-00', 1);
+INSERT INTO `mst_result` VALUES ('steve', 12, '0000-00-00', 9);
+INSERT INTO `mst_result` VALUES ('mercy', 12, '0000-00-00', 2);
+INSERT INTO `mst_result` VALUES ('steve', 16, '0000-00-00', 1);
+INSERT INTO `mst_result` VALUES ('steve', 8, '0000-00-00', 3);
+INSERT INTO `mst_result` VALUES ('steve', 8, '0000-00-00', 1);
 
 -- --------------------------------------------------------
 
@@ -238,7 +238,7 @@ CREATE TABLE `mst_subject` (
 INSERT INTO `mst_subject` VALUES (1, 'VB');
 INSERT INTO `mst_subject` VALUES (5, 'Computer Fundamental');
 INSERT INTO `mst_subject` VALUES (7, 'C Language');
-INSERT INTO `mst_subject` VALUES (8, 'Ms Office');
+INSERT INTO `mst_subject` VALUES (8, 'English');
 INSERT INTO `mst_subject` VALUES (9, 'General Knowledge');
 INSERT INTO `mst_subject` VALUES (10, 'php');
 INSERT INTO `mst_subject` VALUES (11, 'SQL');
@@ -267,7 +267,7 @@ INSERT INTO `mst_test` VALUES (9, 1, 'Essentials of VB', '5');
 INSERT INTO `mst_test` VALUES (10, 1, 'Creating User Services', '5');
 INSERT INTO `mst_test` VALUES (11, 7, 'Objactive Test', '20');
 INSERT INTO `mst_test` VALUES (12, 5, 'General Question', '20');
-INSERT INTO `mst_test` VALUES (13, 8, 'Ms Office Question', '25');
+INSERT INTO `mst_test` VALUES (13, 8, 'English Question', '25');
 INSERT INTO `mst_test` VALUES (14, 9, 'Knowledge Question', '22');
 INSERT INTO `mst_test` VALUES (15, 10, 'php basic', '20');
 INSERT INTO `mst_test` VALUES (16, 11, 'basic SQL', '10');
@@ -295,11 +295,11 @@ CREATE TABLE `mst_user` (
 -- Dumping data for table `mst_user`
 -- 
 
-INSERT INTO `mst_user` VALUES (1, 'raj', 'raj', 'Rajen', 'limbdi', 'limbdi', 9999, 'raj@yahoo.com');
-INSERT INTO `mst_user` VALUES (12, 'ashish', 'shah', 'ashish', 'laskdjf', 'S''nagar', 228585, 'ashish@yahoo.com');
-INSERT INTO `mst_user` VALUES (14, 'Dhaval123', 'a', 'a', 'a', 'a', 0, 'dhaval@yahoo.com');
-INSERT INTO `mst_user` VALUES (15, 'amit', 'a123456', 'amit', 'xyz', 'snagar', 2147483647, 'amitrojasara@gmail.com');
-INSERT INTO `mst_user` VALUES (16, 'sachin', 'welcome', 'sachin', 'kjjskjsdjsdjsdjakskjdskdjskjd', 'mumbai', 2147483647, 'sachin@gmail.com');
+INSERT INTO `mst_user` VALUES (1, 'alice', 'alice', 'alice', 'koromatangi', 'Kakamega', 0712345678, 'alice456@gmail.com');
+INSERT INTO `mst_user` VALUES (12, 'mercy', 'mercy', 'mercy', 'Lurambi', 'Kakamega', 0787654321, 'mercy535@gmail.com');
+INSERT INTO `mst_user` VALUES (14, 'morice', 'morice', 'morice', 'Sichirai', 'Kakamega', 0701010101, 'morice01@gmail.com');
+INSERT INTO `mst_user` VALUES (15, 'steve', 'steve', 'steve', 'Kefinco', 'Kakamega', 0110110110, 'steve011@gmail.com');
+INSERT INTO `mst_user` VALUES (16, 'sheila', 'sheila', 'sheila', 'amalemba', 'Kakamega', 0722022022, 'sammy22@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -323,9 +323,9 @@ CREATE TABLE `mst_useranswer` (
 -- Dumping data for table `mst_useranswer`
 -- 
 
-INSERT INTO `mst_useranswer` VALUES ('2b8e3337837b82112def8d3e2f42f26e', 8, 'What  Default Data Type ?', 'String', 'Variant', 'Integer', 'Boolear', 2, 1);
-INSERT INTO `mst_useranswer` VALUES ('2b8e3337837b82112def8d3e2f42f26e', 8, 'What is Default Form Border Style ?', 'Fixed Single', 'None', 'Sizeable', 'Fixed Diaglog', 3, 3);
-INSERT INTO `mst_useranswer` VALUES ('2b8e3337837b82112def8d3e2f42f26e', 8, 'Which is not type of Control ?', 'text', 'lable', 'checkbox', 'option button', 1, 3);
+INSERT INTO `mst_useranswer` VALUES ('2b8e3337837b82112def8d3e2f42f26e', 8, 'What  is a verb ?', 'Noun', 'Do action', 'Doing word', 'pronoun', 3, 1);
+INSERT INTO `mst_useranswer` VALUES ('2b8e3337837b82112def8d3e2f42f26e', 8, 'What can be used in place of a noun ?', 'Adverb', 'Proverb', 'Adjective', 'Pronoun', 4, 3);
+INSERT INTO `mst_useranswer` VALUES ('2b8e3337837b82112def8d3e2f42f26e', 8, 'Which is not a part of speech ?', 'Noun', 'verb', 'Adjective', 'Additive', 4, 3);
 INSERT INTO `mst_useranswer` VALUES ('a732eca2e5a08f17a4cfd53fe0ba1dfa', 14, 'Which city is known as The City of Palaces?', 'Kolkatta', 'Jerusalem', 'Mumbai', 'Udaipur', 1, 1);
 INSERT INTO `mst_useranswer` VALUES ('a732eca2e5a08f17a4cfd53fe0ba1dfa', 14, 'The Gateway of India is ?', 'Delhi', 'Kolkatta', 'Mumbai', 'Jammu', 3, 1);
 INSERT INTO `mst_useranswer` VALUES ('a732eca2e5a08f17a4cfd53fe0ba1dfa', 14, 'Which city is known as Pink City?', 'Hyderabad', 'Jaipur', 'Bangalore', 'Patna', 2, 1);

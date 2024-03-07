@@ -3,7 +3,8 @@ SQLyog Enterprise - MySQL GUI v5.22
 Host - 4.1.13a-nt : Database - quiz
 *********************************************************************
 Server version : 4.1.13a-nt
-*/
+*/
+
 
 /*!40101 SET NAMES utf8 */;
 
@@ -27,7 +28,7 @@ CREATE TABLE `mst_admin` (
 
 /*Data for the table `mst_admin` */
 
-insert  into `mst_admin`(`loginid`,`pass`) values ('pgdca','pgdca');
+insert  into `mst_admin`(`loginid`,`pass`) values ('alice','alice');
 
 /*Table structure for table `mst_question` */
 
@@ -62,7 +63,14 @@ CREATE TABLE `mst_result` (
 
 /*Data for the table `mst_result` */
 
-insert  into `mst_result`(`login`,`test_id`,`test_date`,`score`) values ('raj',8,'0000-00-00',3),('raj',9,'0000-00-00',3),('raj',8,'0000-00-00',1),('ashish',10,'0000-00-00',3),('ashish',9,'0000-00-00',2),('ashish',10,'0000-00-00',0),('raj',8,'0000-00-00',0);
+insert  into `mst_result`(`login`,`test_id`,`test_date`,`score`) values ('alice',8,'0000-00-00',3),('alice',9,'0000-00-00',3),('alice',8,'0000-00-00',1),('mercy',10,'0000-00-00',3),('mercy',9,'0000-00-00',2),('mercy',10,'0000-00-00',0),('alice',8,'0000-00-00',0);
+
+-- DELIMITER #
+-- CREATE TRIGGER `insert_into_mst_result` BEFORE INSERT ON TABLE `mst_result`()
+-- BEGIN
+-- SET DATEFORMAT dmy;
+-- END #
+-- DELIMITER ;
 
 /*Table structure for table `mst_subject` */
 
@@ -112,7 +120,7 @@ CREATE TABLE `mst_user` (
 
 /*Data for the table `mst_user` */
 
-insert  into `mst_user`(`user_id`,`login`,`pass`,`username`,`address`,`city`,`phone`,`email`) values (1,'raj','raj','Rajen','limbdi','limbdi',9999,'raj@yahoo.com'),(12,'ashish','shah','ashish','laskdjf','S\'nagar',228585,'ashish@yahoo.com'),(14,'Dhaval123','a','a','a','a',0,'dhaval@yahoo.com');
+insert  into `mst_user`(`user_id`,`login`,`pass`,`username`,`address`,`city`,`phone`,`email`) values (1,'alice','alice','alice','Koromatangi','Kakamega', 0712345678,'alice456@gmail.com'),(12,'mercy','mercy','mercy','Lurambi','Kakamega', 0787654321,'mercy535@gmail.com'),(14,'steve','steve','steve','Kefinco','Kakamega',0110110110,'steve011@gmail.com');
 
 /*Table structure for table `mst_useranswer` */
 
@@ -122,10 +130,10 @@ CREATE TABLE `mst_useranswer` (
   `sess_id` varchar(80) default NULL,
   `test_id` int(11) default NULL,
   `que_des` varchar(200) default NULL,
-  `ans1` varchar(50) default NULL,
-  `ans2` varchar(50) default NULL,
-  `ans3` varchar(50) default NULL,
-  `ans4` varchar(50) default NULL,
+  `ans1` varchar(100) default NULL,
+  `ans2` varchar(100) default NULL,
+  `ans3` varchar(100) default NULL,
+  `ans4` varchar(100) default NULL,
   `true_ans` int(11) default NULL,
   `your_ans` int(11) default NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
